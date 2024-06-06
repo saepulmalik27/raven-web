@@ -1,7 +1,8 @@
 "use client"
 import Image from "next/image";
 
-const Profile: React.FC<{ name: string; avatar: string }> = ({
+const Profile: React.FC<{ greeting? : string,  name: string; avatar: string }> = ({
+    greeting,
     name,
     avatar,
   }) => {
@@ -16,7 +17,7 @@ const Profile: React.FC<{ name: string; avatar: string }> = ({
   
     return (
       <div className="flex gap-2 items-center">
-        <p className="text-sm text-jet-black-200">{name}</p>
+        <p className="text-sm text-jet-black-200"> {greeting} <span data-cy={"t-user-name"}>{name}</span></p>
         <Image
           src={avatar}
           width={30}

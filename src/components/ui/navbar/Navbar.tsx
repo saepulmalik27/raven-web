@@ -9,7 +9,7 @@ const MenuListMobile : React.FC<{menus : Array<TNavigation>}> = ({menus}) => {
     return (
       <Fragment>
         <div className="px-3 py-1 flex justify-end items-center text-white w-full">
-          <Profile name="Malik" avatar="/images/default_avatar.png" />
+          <Profile greeting="Hallo," name="Malik" avatar="/images/default_avatar.png" />
         </div>
         <hr />
         <div className="p-3 flex flex-col gap-2">
@@ -30,7 +30,7 @@ const MenuListMobile : React.FC<{menus : Array<TNavigation>}> = ({menus}) => {
   
   const MenuMobile : React.FC<{children : React.ReactNode}>  = ({children}) => {
     return (
-      <Popover className={"relative"}>
+      <Popover >
         <PopoverButton as={Fragment}>
           <Bars3Icon className="md:hidden h-8 w-8" />
         </PopoverButton>

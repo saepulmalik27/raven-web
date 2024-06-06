@@ -24,7 +24,26 @@ body{
     }
 
     .title-5{
-        @apply font-bold text-2xl;
+        @apply font-bold text-xl md:text-2xl;
     }
 }
 
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+::-webkit-scrollbar-track {
+
+    border-radius: unset;
+}
+
+
+::-webkit-scrollbar-thumb {
+    background: transparent;
+    border-radius: unset;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: transparent;
+}

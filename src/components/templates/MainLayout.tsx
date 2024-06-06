@@ -6,11 +6,11 @@ import Profile from "../ui/avatar/Profile";
 
 const Header = () => {
   return (
-    <header className="border h-20 border-b-jet-black-400 px-4 md:px-10 lg:px-14 flex justify-between items-center">
+    <header className="border  bg-white flex-shrink-0 h-20 border-b-jet-black-400 px-4 md:px-10 lg:px-14 flex justify-between items-center">
       <Logo />
       <Navbar lists={navigationList} />
       <div className="hidden md:block">
-        <Profile name="Hallo, Nama" avatar="https://image.com/image.png" />
+        <Profile greeting="Hallo," name="Malik" avatar="https://image.com/image.png" />
       </div>
     </header>
   );
@@ -18,8 +18,8 @@ const Header = () => {
 
 const Footer = () => {
   return (
-    <footer className="bg-jet-black-500 gap-2 flex px-4 md:px-10 md:py-5 py-3 items-center">
-      <div className="text-white flex-shrink-0">
+    <footer className=" mt-8 md:mt-10 flex-shrink-0 bg-jet-black-500 gap-2 flex px-4 md:px-10 md:py-5 py-3 items-center">
+      <div className="text-white flex-shrink-0 flex flex-col justify-center items-center">
         <h5 className="font-bold  text-base md:text-4xl">Raven</h5>
         <p className="text-sm md:text-2xl"> Travel Solution</p>
       </div>
