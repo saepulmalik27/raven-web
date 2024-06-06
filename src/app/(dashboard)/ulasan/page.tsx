@@ -1,9 +1,8 @@
-import React from 'react'
+import UlasanView from "@/modules/Ulasan/UlasanView";
+import React from "react";
 
 const UlasanPage = () => {
-  return (
-    <div>UlasanPage</div>
-  )
-}
+  return <UlasanView />;
+};
 
-export default UlasanPage
+export default UlasanPage;

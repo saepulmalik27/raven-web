@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import "@/styles/globals.css";
 import Mainlayout from "@/components/templates/MainLayout";
 import { cn } from "@/lib/utils";
+import NextTopLoader from "nextjs-toploader";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -36,6 +37,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body   className={cn(inter.className, 'relative')}>
+      <NextTopLoader/>
         <Mainlayout>{children}</Mainlayout>
       </body>
     </html>

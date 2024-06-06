@@ -30,7 +30,7 @@ const MenuListMobile : React.FC<{menus : Array<TNavigation>}> = ({menus}) => {
   
   const MenuMobile : React.FC<{children : React.ReactNode}>  = ({children}) => {
     return (
-      <Popover >
+      <Popover  >
         <PopoverButton as={Fragment}>
           <Bars3Icon className="md:hidden h-8 w-8" />
         </PopoverButton>
@@ -45,7 +45,7 @@ const MenuListMobile : React.FC<{menus : Array<TNavigation>}> = ({menus}) => {
           <PopoverPanel
             anchor="bottom end"
             className={
-              "min-w-64 bg-black bg-opacity-50 rounded-xl border border-jet-black-300 text-sm/6 [--anchor-gap:var(--spacing-5)]"
+              "min-w-64 md:hidden bg-black bg-opacity-50 rounded-xl border border-jet-black-300 text-sm/6 [--anchor-gap:var(--spacing-5)]"
             }
           >
             {children}

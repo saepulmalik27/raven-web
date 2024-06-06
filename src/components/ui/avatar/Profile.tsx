@@ -16,8 +16,8 @@ const Profile: React.FC<{ greeting? : string,  name: string; avatar: string }> =
     };
   
     return (
-      <div className="flex gap-2 items-center">
-        <p className="text-sm text-jet-black-200"> {greeting} <span data-cy={"t-user-name"}>{name}</span></p>
+      <div className="flex gap-2 items-center" data-cy={"h-profile"} >
+        <p className="text-sm text-current"> {greeting} <span data-cy={"t-user-name"}>{name}</span></p>
         <Image
           src={avatar}
           width={30}

@@ -1,8 +1,9 @@
+import PencarianView from '@/modules/Pencarian/PencarianView'
 import React from 'react'
 
 const PencarianPage = () => {
   return (
-    <div>PencarianPage</div>
+    <PencarianView/>
   )
 }
 
