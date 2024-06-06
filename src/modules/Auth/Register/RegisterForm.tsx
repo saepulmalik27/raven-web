@@ -1,5 +1,5 @@
 "use client";
-import Input from "@/components/Input/Input";
+import Input from "@/components/ui/Input/Input";
 import { useRouter } from "next/navigation";
 import React from "react";
 import { SubmitHandler, useForm } from "react-hook-form";

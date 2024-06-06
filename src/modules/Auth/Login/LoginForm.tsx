@@ -1,6 +1,6 @@
 "use client";
-import Input from "@/components/Input/Input";
-import Checkbox from "@/components/checkbox/checkbox";
+import Input from "@/components/ui/Input/Input";
+import Checkbox from "@/components/ui/checkbox/checkbox";
 import routes from "@/lib/routes";
 import Image from "next/image";
 import { useRouter } from "next/navigation";

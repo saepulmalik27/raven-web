@@ -20,7 +20,9 @@ const config: Config = {
         "jet-black" : {
           100 : '#CCCCCC',
           200 : '#B5B5B5',
-          300 : '#7C7C7C'
+          300 : '#7C7C7C',
+          400 : '#E3E3E3',
+          500 : '#333333'
         },
         "green-raven" : {
           200 : '#4BFF72'
