@@ -7,9 +7,10 @@ interface InputProps {
   control: Control<any>;
   label: string;
   type?: string;
+  placeholder?:string;
 }
 
-const Input: React.FC<InputProps> = ({ name, control, label, type = 'text' }) => {
+const Input: React.FC<InputProps> = ({ name, control, label, type = 'text', placeholder }) => {
   const {
     field,
     fieldState: { error },
@@ -28,6 +29,7 @@ const Input: React.FC<InputProps> = ({ name, control, label, type = 'text' }) =>
         id={name}
         {...field}
         type={type}
+        placeholder={placeholder}
         className={`mt-1 block w-full border p-1 border-jet-black-100 rounded-md h-9 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm ${
           error ? 'border-red-500' : ''
         }`}

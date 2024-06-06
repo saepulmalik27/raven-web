@@ -12,16 +12,19 @@ body{
     flex-direction : column;
 }
 
-.login-box {
-    @apply max-w-full h-fit p-10;
-    width : 530px;
-    border-radius: 49px;
+.auth-box {
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    @apply max-w-full h-fit p-10 w-[530px] rounded-[20px] lg:rounded-[49px];
+
 }
 
 @layer components{
     .btn-primary {
-        @apply bg-primary rounded-xl w-full text-white text-2xl font-bold p-6;
+        @apply bg-primary text-base p-3 rounded-xl w-full text-white lg:text-2xl font-bold lg:p-6;
+    }
+
+    .title-5{
+        @apply font-bold text-2xl;
     }
 }
 

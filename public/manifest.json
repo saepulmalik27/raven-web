@@ -1,0 +1,10 @@
+{
+  "theme_color": "#fff",
+  "background_color": "#fff",
+  "display": "browser",
+  "scope": "/",
+  "start_url": "/",
+  "name": "raven travel",
+  "short_name": "raven",
+  "description": "raven travel"
+}

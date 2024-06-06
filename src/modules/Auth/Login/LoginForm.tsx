@@ -1,24 +1,32 @@
 "use client";
 import Input from "@/components/Input/Input";
+import Checkbox from "@/components/checkbox/checkbox";
+import routes from "@/lib/routes";
 import Image from "next/image";
+import { useRouter } from "next/navigation";
 import React from "react";
 import { SubmitHandler, useForm } from "react-hook-form";
 
 type FormValues = {
-  username: string;
+  userid: string;
   email: string;
   password: string;
 };
 
 const LoginForm = () => {
   const { handleSubmit, control } = useForm<FormValues>();
+const router = useRouter()  
 
   const onSubmit: SubmitHandler<FormValues> = (data) => {
     console.log(data);
   };
 
+  const handleClickRegister = () => {
+    router.push(routes.register)
+  }
+
   return (
-    <div className="login-box">
+    <div className="auth-box">
       <div className="flex justify-center items-center">
         <Image
           src={"/images/logo-login.png"}
@@ -36,18 +44,18 @@ const LoginForm = () => {
           label="Password"
           type="password"
         />
+        <Checkbox name="rememberme" control={control} label="Ingat Saya" />
         <button type="submit" className="btn-primary">
           Login
         </button>
-        <div className="flex flex-col justify-center items-center">
-          <p className="font-bold">atau</p>
-          <p>
-            {" "}
-            <span className="text-jet-black-200">Belum punya akun ?</span>{" "}
-            <span className="text-green-raven-200">Daftar</span>
-          </p>
-        </div>
       </form>
+      <div className="flex flex-col justify-center items-center">
+        <p className="font-bold">atau</p>
+        <p>
+          <span className="text-jet-black-200">Belum punya akun ?</span>{" "}
+          <span onClick={handleClickRegister} className="text-green-raven-200 cursor-pointer hover:text-green-500">Daftar</span>
+        </p>
+      </div>
     </div>
   );
 };
